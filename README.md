@@ -38,10 +38,10 @@ The solution developed in this project can be implemented in various business sc
     - [3. Exploratory Data Analysis (EDA)](#3-exploratory-data-analysis-eda)
     - [4. Model Selection and Training](#4-model-selection-and-training)
     - [5. Model Evaluation and Tuning](#5-model-evaluation-and-tuning)
-  - [6. Final Evaluation on Test Set](#6-final-evaluation-on-test-set)
-  - [7. Model Performance Analysis](#7-model-performance-analysis)
-  - [8. Inferences](#8-inferences)
-  - [9. Recommendations](#9-recommendations)
+    - [6. Final Evaluation on Test Set](#6-final-evaluation-on-test-set)
+    - [7. Model Performance Analysis](#7-model-performance-analysis)
+    - [8. Inferences](#8-inferences)
+    - [9. Recommendations](#9-recommendations)
   - [Workflow](#workflow)
   - [Contact](#contact)
 
@@ -139,20 +139,20 @@ And the co-relation heatmap as well to understand co-linearity among the feature
 
 **Hyperparameter Tuning**: Fine-tuned hyperparameters based on the initial evaluation to optimize model performance. Adjusted learning rates, regularization parameters, tree depths, and the number of estimators, depending on the model type.
 
-## 6. Final Evaluation on Test Set
+### 6. Final Evaluation on Test Set
 
 **Testing**: Once the model was finalized and optimized, it was evaluated on the `test.csv` dataset. Reported the final macro-F1 score, precision, and recall to assess how well the model generalized to unseen data.
 
-## 7. Model Performance Analysis
+### 7. Model Performance Analysis
 
-**Training Dataset Performance**: 
+**Training Dataset Performance**:
 
-Trained using ensemble methods XGBoost and Random Forest; Random Forest performed the best.
+The model was trained using ensemble methods, specifically XGBoost and Random Forest, along with Logistic Regression and Decision Tree. Among them, Random Forest achieved the best performance.
 
-![CHEESE!](Images/Logistics_train_metrics.png)
-![CHEESE!](Images/DecisionTree_train_metrics.png)
 ![CHEESE!](Images/RF_train_metrics.png)
 ![CHEESE!](Images/XGB_train_metrics.png)
+![CHEESE!](Images/Logistics_train_metrics.png)
+![CHEESE!](Images/DecisionTree_train_metrics.png)
 
 **Test Dataset Performance**:
 
@@ -160,7 +160,7 @@ Selected the Random Forest Classifier and applied it to the test dataset.
 
 ![CHEESE!](Images/RF_test_metrics.png)
 
-## 8. Inferences
+### 8. Inferences
 
 **High Training Performance**: The model exhibits very high performance on the training dataset, indicating it has learned the patterns in the data well.
 
@@ -169,7 +169,7 @@ Selected the Random Forest Classifier and applied it to the test dataset.
 **Class-wise Variations**: While the model maintains strong performance across most classes, there is a noticeable drop in performance for benign positive incidents in the test set. This could be an area for further investigation and improvement.
 Overall, the Random Forest model demonstrates strong capabilities in classifying cybersecurity incidents, with good generalization to real-world data. Future improvements could focus on enhancing performance for specific classes and continuing to monitor and adjust the model as more data becomes available.
 
-## 9. Recommendations
+### 9. Recommendations
 
 **Integration into SOC Workflows:**
 
@@ -184,6 +184,7 @@ Overall, the Random Forest model demonstrates strong capabilities in classifying
   -**Real-world Testing:** Conduct extensive testing in a real-world setting to validate model performance and address any operational challenges.
   
   -**Feedback Loop:** Implement a feedback loop to capture analyst insights and adjust the model based on real-world usage and performance metrics.
+
 
 ## Workflow
 [Slides](https://docs.google.com/presentation/d/1bzLQj3FN7Tjf427imL5FT2uDhttaregGrXIZJbgHmnE)
