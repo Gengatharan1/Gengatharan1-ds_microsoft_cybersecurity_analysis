@@ -149,9 +149,16 @@ And the co-relation heatmap as well to understand co-linearity among the feature
 
 The model was trained using ensemble methods, specifically XGBoost and Random Forest, along with Logistic Regression and Decision Tree. Among them, Random Forest achieved the best performance.
 
+**Random Forest Classifier**:
 ![CHEESE!](Images/RF_train_metrics.png)
+
+**XGBoost Classifier**:
 ![CHEESE!](Images/XGB_train_metrics.png)
+
+**Logistic Regression**:
 ![CHEESE!](Images/Logistics_train_metrics.png)
+
+**Decision Tree Classifier**:
 ![CHEESE!](Images/DecisionTree_train_metrics.png)
 
 **Test Dataset Performance**:
